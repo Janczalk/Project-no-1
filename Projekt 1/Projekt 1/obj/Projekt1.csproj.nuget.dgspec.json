@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jancz\\Desktop\\Algortymy i struktury danych\\laby\\projekt 1\\Projekt 1\\Projekt 1\\Projekt1.csproj": {}
+    "C:\\Users\\jancz\\Documents\\GitHub\\Project-no-1\\Projekt 1\\Projekt 1\\Projekt1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jancz\\Desktop\\Algortymy i struktury danych\\laby\\projekt 1\\Projekt 1\\Projekt 1\\Projekt1.csproj": {
+    "C:\\Users\\jancz\\Documents\\GitHub\\Project-no-1\\Projekt 1\\Projekt 1\\Projekt1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jancz\\Desktop\\Algortymy i struktury danych\\laby\\projekt 1\\Projekt 1\\Projekt 1\\Projekt1.csproj",
+        "projectUniqueName": "C:\\Users\\jancz\\Documents\\GitHub\\Project-no-1\\Projekt 1\\Projekt 1\\Projekt1.csproj",
         "projectName": "Projekt1",
-        "projectPath": "C:\\Users\\jancz\\Desktop\\Algortymy i struktury danych\\laby\\projekt 1\\Projekt 1\\Projekt 1\\Projekt1.csproj",
+        "projectPath": "C:\\Users\\jancz\\Documents\\GitHub\\Project-no-1\\Projekt 1\\Projekt 1\\Projekt1.csproj",
         "packagesPath": "C:\\Users\\jancz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jancz\\Desktop\\Algortymy i struktury danych\\laby\\projekt 1\\Projekt 1\\Projekt 1\\obj\\",
+        "outputPath": "C:\\Users\\jancz\\Documents\\GitHub\\Project-no-1\\Projekt 1\\Projekt 1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

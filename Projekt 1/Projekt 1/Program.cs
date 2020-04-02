@@ -2,7 +2,7 @@
 using System.Diagnostics;
 
 namespace Projekt_1
-{
+{   
     // komentarz dla testow
     class Program
     {
@@ -151,6 +151,8 @@ namespace Projekt_1
             double srednia = wynik / counter;
             Console.WriteLine($"{srednia:F02}"); */
 
+            // Binarne srednie pesymistyczne
+
          /*   int roznica = 0;
             double wyniczek = 0;
             for(int i = 2000000; i < rTablicy; i+=4000000)
@@ -163,7 +165,7 @@ namespace Projekt_1
                     stoperek.Start();
                     WyszukiwanieBinarne(tablica, tablica[j]);
                     stoperek.Stop();
-                    wynik += stoperek.ElapsedTicks;
+                    wyniczek += stoperek.ElapsedTicks;
                 }
                 roznica = (i / 2) - (i / 4);
                 Console.WriteLine($"Srednia {(wyniczek/roznica):F02};Element  {i}");
@@ -186,26 +188,18 @@ namespace Projekt_1
 
             // liniowe srednie (pierwszy element + ostatni element)/2
 
-            int counter = 0;
-            double suma = 0;
-            for(int i = 2000000; i < rTablicy; i+=2000000) 
+            /*double sumka = 0;
+            for(int i = 2000000; i < rTablicy; i+=7000000) 
             {
                 tablica = Pomocna.Posortowane(i);
-                int srodek_kurwa_michal_przestan_KURWA_mlaskac = rTablicy / 2;
+                sumka = 0;
                 stoperek.Reset();
                 stoperek.Start();
-                WyszukiwanieLiniowe(tablica, srodek_kurwa_michal_przestan_KURWA_mlaskac);
-                wynik = stoperek.ElapsedTicks;
+                WyszukiwanieLiniowe(tablica, tablica[i/2]);
                 stoperek.Stop();
-                suma += wynik;
-                counter++;
-                Console.WriteLine($"wynik;{wynik};{counter}");
-
-            }
-            Console.WriteLine($"srednia;{(suma/counter):F02}");
-
-
-
+                sumka += stoperek.ElapsedTicks;
+                Console.WriteLine($"Srednia {sumka}; element {i}");
+            } */
         }
     }
 }
