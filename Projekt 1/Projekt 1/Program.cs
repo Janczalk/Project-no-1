@@ -3,6 +3,7 @@ using System.Diagnostics;
 
 namespace Projekt_1
 {
+    // komentarz dla testow
     class Program
     {
         static int licznik = 0;
@@ -132,10 +133,13 @@ namespace Projekt_1
              }*/
 
 
-            /* int counter = 0;
-            for(int i = 2000000; i < rTablicy; i+=2000000) // binarne srednie pesymistyczne
+            // binarne srednie pesymistyczne
+
+            /*int counter = 0;
+            for (int i = 2000000; i < rTablicy; i+=2000000) 
             {
                 tablica = Pomocna.Posortowane(i);
+
                 stoperek.Reset();
                 stoperek.Start();
                 counter++;
@@ -145,10 +149,31 @@ namespace Projekt_1
                 Console.WriteLine($"{wynik};{i};{counter}");
             }
             double srednia = wynik / counter;
-            Console.WriteLine($"{srednia:F02}"); 
+            Console.WriteLine($"{srednia:F02}"); */
+
+         /*   int roznica = 0;
+            double wyniczek = 0;
+            for(int i = 2000000; i < rTablicy; i+=4000000)
+            {
+                wyniczek = 0;
+                tablica = Pomocna.Posortowane(i);            
+                for (int j = i/4; j <i/2; j++)
+                {
+                    stoperek.Reset();
+                    stoperek.Start();
+                    WyszukiwanieBinarne(tablica, tablica[j]);
+                    stoperek.Stop();
+                    wynik += stoperek.ElapsedTicks;
+                }
+                roznica = (i / 2) - (i / 4);
+                Console.WriteLine($"Srednia {(wyniczek/roznica):F02};Element  {i}");
+            } */
 
 
-            for(int i = 2000000; i <rTablicy; i+=2000000) // binarne srednie pesymistyczne instrumentacja
+
+            // binarne srednie pesymistyczne instrumentacja
+
+            /*for(int i = 2000000; i <rTablicy; i+=2000000) 
             {
                 tablica = Pomocna.Posortowane(i);
                 licznik = 0;
@@ -157,11 +182,13 @@ namespace Projekt_1
                 Console.WriteLine($"{wynik};{i}");
             }
             double srednia = wynik / licznik;
-            Console.WriteLine($"srednia arytmetyczna;{srednia:F02}");
+            Console.WriteLine($"srednia arytmetyczna;{srednia:F02}"); */
+
+            // liniowe srednie (pierwszy element + ostatni element)/2
 
             int counter = 0;
             double suma = 0;
-            for(int i = 2000000; i < rTablicy; i+=2000000) // liniowe srednie (pierwszy element + ostatni element)/2
+            for(int i = 2000000; i < rTablicy; i+=2000000) 
             {
                 tablica = Pomocna.Posortowane(i);
                 int srodek_kurwa_michal_przestan_KURWA_mlaskac = rTablicy / 2;
@@ -175,7 +202,7 @@ namespace Projekt_1
                 Console.WriteLine($"wynik;{wynik};{counter}");
 
             }
-            Console.WriteLine($"srednia;{(suma/counter):F02}"); */
+            Console.WriteLine($"srednia;{(suma/counter):F02}");
 
 
 
