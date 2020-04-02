@@ -85,9 +85,10 @@ namespace Projekt_1
             Stopwatch stoperek = new Stopwatch();
             double wynik = 0;
 
-            // wyszukiwanie binarne pesymistyczne
+            // binarne pesymistyczne
 
-            /* for(int i = 2000000; i < rTablicy; i+=8000000)
+            /*
+             for(int i = 2000000; i < rTablicy; i+=8000000)
              {
                  stoperek.Reset();
                  stoperek.Start();
@@ -97,21 +98,21 @@ namespace Projekt_1
                  wynik = stoperek.ElapsedMilliseconds;
                  Console.WriteLine($"{wynik};{i}");
 
-             } */
+             }
 
-            // wyszukiwanie binarne pesymistyczne instrumentacyjne
+            // binarne pesymistyczne instrumentacyjne
 
-            /*for(int i = 2000000; i < rTablicy; i+=5000000) 
+            for(int i = 2000000; i < rTablicy; i+=5000000) 
             {
                 tablica = Pomocna.Posortowane(i);
                 licznik = 0;
                 WyszukiwanieBinarneZInstrumentacja(tablica, -1);
                 Console.WriteLine($"{licznik};{i}");
-            }*/
+            }
 
-            // wyszukiwanie liniowe pesymistyczne
+            // liniowe pesymistyczne
 
-            /*for (int i = 2000000; i < rTablicy; i+=5000000 ) 
+            for (int i = 2000000; i < rTablicy; i+=5000000 ) 
             {
                 tablica = Pomocna.Posortowane(i);
                 stoperek.Reset();
@@ -120,40 +121,21 @@ namespace Projekt_1
                 stoperek.Stop();
                 wynik = stoperek.ElapsedMilliseconds;
                 Console.WriteLine($"{wynik};{i}");
-            }*/
+            }
 
-            // wyszukiwanie liniowe pesymistyczne instrumentacyjne
+            // liniowe pesymistyczne instrumentacyjne
 
-            /* for(int i = 2000000; i <rTablicy; i+=2000000) 
+             for(int i = 2000000; i <rTablicy; i+=2000000) 
              {
                  tablica = Pomocna.Posortowane(i);
                  licznik = 0;
                  WyszukiwanieLinioweInstrumentacja(tablica, -1);
                  Console.WriteLine($"{licznik};{i}");
-             }*/
-
-
-            // binarne srednie pesymistyczne
-
-            /*int counter = 0;
-            for (int i = 2000000; i < rTablicy; i+=2000000) 
-            {
-                tablica = Pomocna.Posortowane(i);
-
-                stoperek.Reset();
-                stoperek.Start();
-                counter++;
-                WyszukiwanieBinarne(tablica, -1);
-                wynik += stoperek.ElapsedTicks;
-                stoperek.Stop();
-                Console.WriteLine($"{wynik};{i};{counter}");
-            }
-            double srednia = wynik / counter;
-            Console.WriteLine($"{srednia:F02}"); */
+             }
 
             // Binarne srednie pesymistyczne
 
-         /*   int roznica = 0;
+            int roznica = 0;
             double wyniczek = 0;
             for(int i = 2000000; i < rTablicy; i+=4000000)
             {
@@ -169,26 +151,11 @@ namespace Projekt_1
                 }
                 roznica = (i / 2) - (i / 4);
                 Console.WriteLine($"Srednia {(wyniczek/roznica):F02};Element  {i}");
-            } */
-
-
-
-            // binarne srednie pesymistyczne instrumentacja
-
-            /*for(int i = 2000000; i <rTablicy; i+=2000000) 
-            {
-                tablica = Pomocna.Posortowane(i);
-                licznik = 0;
-                WyszukiwanieBinarneZInstrumentacja(tablica, -1);
-                wynik += licznik;
-                Console.WriteLine($"{wynik};{i}");
             }
-            double srednia = wynik / licznik;
-            Console.WriteLine($"srednia arytmetyczna;{srednia:F02}"); */
 
-            // liniowe srednie (pierwszy element + ostatni element)/2
+            // liniowe srednie
 
-            /*double sumka = 0;
+            double sumka = 0;
             for(int i = 2000000; i < rTablicy; i+=7000000) 
             {
                 tablica = Pomocna.Posortowane(i);
@@ -199,7 +166,8 @@ namespace Projekt_1
                 stoperek.Stop();
                 sumka += stoperek.ElapsedTicks;
                 Console.WriteLine($"Srednia {sumka}; element {i}");
-            } */
+            } 
+            */
         }
     }
 }
