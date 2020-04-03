@@ -88,6 +88,7 @@ namespace Projekt_1
             // binarne pesymistyczne
 
             /*
+             int counter = 0;
              for(int i = 2000000; i < rTablicy; i+=8000000)
              {
                  stoperek.Reset();
@@ -95,8 +96,9 @@ namespace Projekt_1
                  tablica = Pomocna.Posortowane(i);
                  WyszukiwanieBinarne(tablica, -1);
                  stoperek.Stop();
+                 counter++;
                  wynik = stoperek.ElapsedMilliseconds;
-                 Console.WriteLine($"{wynik};{i}");
+                 Console.WriteLine($"{(wynik/counter):F00};{i}");
 
              }
 
